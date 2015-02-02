@@ -14,28 +14,12 @@ namespace Week1CodeChallenge
 			{
                 Console.WriteLine(FizzBuzz(i));
 			}
-            for (int i = 92 ; i < 78; i++)
+            for (int i = 92 ; i < 78; i--)
             {
                 Console.WriteLine(FizzBuzz(i));
             }
-
             Console.WriteLine(Yodaizer("I like code"));
-            string Forces = "The small spoon delivers an uneven cereal to milk ratio. Your forces are under attack. If Lord Of the Rings had a Scooby Doo ending who would Sauron really be?";
-            for (int i = 0; i < Forces.Length; i++)
-            {
-                if ("aeiou".Contains(Forces[i].ToString().ToLower()))
-                {
-                    Console.WriteLine(TextStats(Forces));
-                }
-            }
-             List<string> Words = Forces.Split(' ').ToList();
-            for (int i = 0; i < Forces.Count(); i++)
-            {
-                Console.WriteLine(TextStats(Forces[i].ToString()));
-            }
-
-            Console.WriteLine(TextStats("The small spoon delivers an uneven cereal to milk ratio. Your forces are under attack. If Lord Of the Rings had a Scooby Doo ending who would Sauron really be?".Length.ToString()));
-           
+            Console.WriteLine(TextStats);
             //Create a for loop that loops through every odd number
             for (int i = 1; i < 26; i += 2)
             {
@@ -155,13 +139,23 @@ namespace Week1CodeChallenge
         }
         public static string TextStats (string input)
         {
-            for (int i = 0; i < input.Length; i++)
+            string Forces = "The small spoon delivers an uneven cereal to milk ratio. Your forces are under attack. If Lord Of the Rings had a Scooby Doo ending who would Sauron really be?";
+            
+            for (int i = 0; i < Forces.Length; i++)
             {
-                Console.WriteLine(input[i]);
+                if ("aeiou".Contains(Forces[i].ToString().ToLower()))
+                {
+                    ;
+                }
+                if ("aeiou".Contains(Forces[i].ToString().ToLower()))
+                {
+                    
+                }
             }
-            for (int i = 0; i < input.Count(); i++)
+             List<string> Words = Forces.Split(' ').ToList();
+            for (int i = 0; i < Forces.Count(); i++)
             {
-                Console.WriteLine(input[i]);
+                Console.WriteLine(TextStats(Forces[i].ToString()));
             }
             return string.Empty;
         }
