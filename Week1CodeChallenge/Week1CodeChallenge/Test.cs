@@ -15,7 +15,6 @@ namespace Week1CodeChallenge
         {
             StringAssert.AreEqualIgnoringCase("1", Program.FizzBuzz(1));
         }
-        [Ignore]
         [Test, Timeout(500)]
         public void testFizzBuzzNegative()
         {
